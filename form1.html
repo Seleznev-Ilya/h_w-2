@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <meta charset = "UTF-8">
+   <link rel = "stylesheet" href = "css/style.css">
+   <link href = "https://fonts.googleapis.com/css?family=Roboto&display=swap" rel = "stylesheet">
+   <link href = "https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel = "stylesheet">
+   <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+         integrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+         crossorigin = "anonymous">
+   <title>Form1</title>
+</head>
+<body>
+<header>
+   <div class = "container">
+      <div class = "list-links">
+         <ul class = "container_ul-style">
+            <li class = "container__ul_li-style">
+               <a href = "form2.html"><h2>Form2</h2></a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</header>
+<main>
+   <div class = "container">
+      <h2 class = "container__h2_directions-center container__h2_directions-margin-left container__h2_style-size">
+         Form1
+      </h2>
+      <div class = "registration">
+         <div class = "registration__item">
+
+            <p class = "registration__item-p">1.Личные данные</p>
+            <form type = "form" class = "registration__form">
+
+               <div class = "request">
+                  <p>Обращение*</p>
+                  <label class = "form__input-label" for = "request"><p>Господин</p></label>
+                  <input class = "form__input_radio" type = "radio" id = "request" required name = "contact" placeholder= "email">
+                  <label class = "form__input-label1" for = "request1"><p>Госпожа</p></label>
+                  <input class = "form__input_radio" type = "radio" id = "request1" required name = "contact" placeholder="phone">
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "rank">
+                  <p>Звание</p>
+                  <label class = "form__input_label" for = "rank"></label>
+                  <input class = "form__input" type = "text" id = "rank" maxlength="17" name = "rank" value = "" required
+                         pattern = "[А-Я][а-я]+">
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "name">
+                  <p>Имя*</p>
+                  <label for = "rank"></label>
+                  <input class = "form__input" type = "text" id = "name" name = "name" placeholder="Sergey" required
+                         pattern = "[А-Я][а-я]+">
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "second_name">
+                  <p>Фамилия*</p>
+                  <label for = "rank"></label>
+                  <input class = "form__input" type = "text" id = "second_name" name = "second_name" placeholder="Sergeev"
+                         required pattern = "[А-Я][а-я]+">
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "street">
+                  <p>Улица*</p>
+                  <label for = "rank"></label>
+                  <input class = "form__input" type = "text" id = "street" name = "street" placeholder= "Lenina 22" required
+                         pattern = "[А-Я][а-я][0-9]+">
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "index_city">
+                  <p>Индекс/город*</p>
+                  <label for = "rank"></label>
+                  <input class = "form__input" type = "text" id = "index_city" name = "index_city" placeholder= "94000"
+                         required pattern = "[0-9]{5}">
+                  <input class = "form__input" type = "text" id = "index_city" name = "index_city" placeholder= "Kiev"
+                         required pattern = "[А-Я][а-я]+">
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "country">
+                  <p>Страна*</p>
+                  <div class = "select select__country">
+                     <select name = "country" required>
+                        <option value = "none">Украина</option>
+                        <option value = "jul">Беларусь</option>
+                        <option value = "aug">Россия</option>
+                        <option value = "aug">Конго</option>
+                     </select>
+
+                  </div>
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "currency">
+                  <p>Валюта*</p>
+                  <div class = "select select__currency">
+                     <select name = "country" required>
+                        <option value = "none">Американский доллар (USD)</option>
+                        <option value = "jul">Канадский доллар (CAD)</option>
+                        <option value = "aug">Гривна (UAH)</option>
+                     </select>
+                  </div>
+                  <span>&#128504;</span>
+
+               </div>
+
+               <div class = "birthday">
+                  <p>Дата рождения*</p>
+                  <label for = "rank"></label>
+                  <input class = "form__input" type = "text" id = "birthday" name = "birthday" placeholder="18.09.1987"
+                         required pattern = "[А-Я][а-я][0-9]+">
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "email">
+                  <p>E-Mail*</p>
+                  <label for = "email"></label>
+                  <input class = "form__input" type = "email" id = "email" pattern = ".+@globex.com" size = "30"
+                         placeholder= "Sergey6547@gmail.com" required>
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "mobile">
+                  <p>Мобильный телефон*</p>
+                  <label for = "mobile"></label>
+                  <div class = "select1">
+                     <select name = "country" id = "mobile" class = "form__input_tel">
+                        <option value = "none">+380</option>
+                        <option value = "jul">+1</option>
+                        <option value = "aug">+44</option>
+                     </select>
+                     <input class = "form__input_tel" type = "text" id = "mobile_1" name = "mobile" maxlength = "5"
+                            size = "6" required pattern = "[0-9]{5}">
+                     <input class = "form__input_tel" type = "text" id = "mobile_2" name = "mobile" maxlength = "4"
+                            size = "5" required pattern = "[0-9]{4}">
+                  </div>
+                  <span>&#128504;</span>
+               </div>
+
+               <div class = "tel">
+                  <p>Телефон*</p>
+                  <label for = "mobile1"></label>
+                  <div class = "select1">
+                     <select name = "country" id = "mobile1" class = "form__input_tel1">
+                        <option value = "none">+380</option>
+                        <option value = "jul">+1</option>
+                        <option value = "aug">+44</option>
+                     </select>
+                     <input class = "form__input_tel" type = "text" id = "mobile2" name = "mobile" size = "6"
+                            maxlength = "5" required pattern = "[0-9]{5}">
+                     <input class = "form__input_tel" type = "text" id = "mobile3" name = "mobile" size = "5"
+                            maxlength = "4" required pattern = "[0-9]{4}">
+                  </div>
+                  <span>&#128504;</span>
+               </div>
+
+            </form>
+         </div>
+
+         <div class = "registration__item">
+            <p class = "registration__item-p">2.Данные доступа</p>
+            <form type = "form" class = "registration__form">
+
+               <div class = "registration__item_password">
+                  <p>Повторите</p>
+                  <label for = "Password1"></label>
+                  <input class = "form__input" type = "password" name = "name" id = "Password1"
+                         autocomplete = "current-password" required placeholder = "от 4 до 10 символов" minlength = "4"
+                         maxlength = "10">
+                  <p class="form__input-direction-under-input">( 8-20 символов : <br>
+                     цифры и буквы)</p>
+               </div>
+
+               <div class="reliability">
+                  <p>надежность пароля</p>
+                     <progress max="10" value="7" ></progress>
+               </div>
+
+               <div class = "registration__item_password  registration__item_password--not">
+                  <p>Введте пароль еще<br> раз*</p>
+                  <label for = "Password1"></label>
+                  <input class = "form__input" type = "password" name = "name" id = "Password1"
+                         autocomplete = "current-password" required placeholder = "от 4 до 10 символов" minlength = "4"
+                         maxlength = "10">
+               </div>
+
+               <div class = "currency">
+                  <p>Контрольные вопросы*</p>
+                  <div class = "select select__currency">
+                     <select name = "country">
+                        <option value = "none">Название вашего первого авто</option>
+                        <option value = "jul">Имя мамы</option>
+                        <option value = "aug">Второе имя</option>
+                     </select>
+                  </div>
+               </div>
+
+               <div class = "rank">
+                  <p>Ваш ответ*</p>
+                  <label class = "form__input_label" for = "rank"></label>
+                  <input class = "form__input" type = "text" id = "rank" name = "rank" placeholder= "seat leon" required
+                         pattern = "[А-Я][а-я]+">
+               </div>
+
+               <div class="accept">
+                  <input class="aside" type = "checkbox">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in itaque magni nemo quasi sed unde.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in itaque magni nemo quasi sed unde.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in itaque magni nemo quasi sed unde.</p>
+               </div>
+
+            </form>
+         </div>
+      </div>
+   </div>
+</main>
+
+
+</body>
+</html>
+
+
+<!--<label for="name">Имя</label>-->
+<!--<input class="form__input" type="text" name="name" id="name" required pattern="[А-Я][а-я]+" placeholder="Василий">-->
+<!--<input type = "submit" value="Написать письмо">-->
+<span>&#128504;</span>
