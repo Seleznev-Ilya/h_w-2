@@ -61,15 +61,6 @@ form p {
     padding-bottom: 20px;
 }
 
-/*span{*/
-/*!*color: green;*!*/
-/*display: inline-block;*/
-/*color: #666666;*/
-/*height: 40px;*/
-/*width: 30px;*/
-/*font-family: Arial, sans-serif;*/
-/*font-size: 30px;*/
-/*}*/
 .registration {
     border-left: 3px solid steelblue;
     padding: 1px 0 20px 20px;
@@ -90,9 +81,11 @@ form p {
     position: relative;
     margin-bottom: 5px;
 }
-.registration__item_password{
+
+.registration__item_password {
     margin: 0 0 45px 0;
 }
+
 .form__input-label {
     position: absolute;
     left: 190px;
@@ -160,51 +153,61 @@ select {
     height: 24px;
     border-radius: 2px;
 }
-.form__input-direction-under-input{
+
+.form__input-direction-under-input {
     position: absolute;
     left: 190px;
     top: 14px;
 }
-.reliability progress{
+
+.reliability progress {
     /*transform: translateY(40px);*/
 
     margin-left: 50px;
 }
-progress{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+
+progress {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
     color: #d6249f;
     border-radius: 10px;
     border: 1px solid #cecece;
     height: 10px;
     width: 210px;
 }
-.reliability{
+
+.reliability {
     margin-bottom: 10px;
 }
-.registration__item_password--not{
+
+.registration__item_password--not {
     margin-bottom: 10px;
 }
-.accept{
+
+.accept {
     margin-top: 20px;
     position: relative;
     padding: 0 45px;
-    background-color: #cecece ;
+    background-color: #cecece;
 }
-.aside{
+
+.aside {
     position: absolute;
     top: 5px;
     left: 25px;
 }
-span{
+
+span {
     position: absolute;
     left: 415px;
     font-size: 30px;
 
 }
-input:invalid + span{
+
+input:invalid + span {
     color: #999999;
 }
-input:valid + span{
+
+input:valid + span {
     color: forestgreen;
 }
 
