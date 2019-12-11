@@ -23,6 +23,9 @@ body {
 .form1 {
   width: 100vw; }
 
+.form-event__label-lastname--t{
+  transform: translate(7px, -38px);
+}
 .checkin {
   display: -webkit-box;
   display: -webkit-flex;
