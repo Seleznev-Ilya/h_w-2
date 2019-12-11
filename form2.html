@@ -4,6 +4,8 @@
    <meta charset = "UTF-8">
    <link rel = "stylesheet" href = "css/style.css">
    <link href = "https://fonts.googleapis.com/css?family=Roboto&display=swap" rel = "stylesheet">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/main.css" />
    <title>Form2</title>
 </head>
 <body>
@@ -26,12 +28,68 @@
          <h2 class = "container__h2_directions-center container__h2_directions-margin-left container__h2_style-size">
             Form2
          </h2>
-         <form action = "/" class = "registration__form">
-
-            <!--<input type="text" name="name"  required pattern="[А-Я][а-я]+" placeholder="Василий">-->
-            <!--<input type = "submit" value="Написать письмо">-->
-
-         </form>
+         <br>
+         <section class="event">
+            <div class="container">
+               <h1 class="event__title">Gala Event</h1>
+               <p class="event__text">
+                  This form allows you to purchase tickets to our gala event, for
+                  yourself and a guest
+               </p>
+               <form action="" class="form-event">
+                  <h2 class="form-event__title">Your contact information</h2>
+                  <p class="form-event__name">Name</p>
+                  <input type="text" class="form-event__input-name"  required/>
+                  <input type="text" class="form-event__input-lastname" required/></br>
+                  <label for="" class="form-event__label-name">First Name</label>
+                  <label for="" class="form-event__label-lastname">Last Name</label>
+                  <p class="form-event__email">Email</p>
+                  <input type="email" class="form-event__input-email" placeholder="email@example.com" required/>
+                  <div class="form-event__container">
+                     <p class="form-event__preference">Your meal preference</p>
+                     <label class = "form-event__preference-label" for=""
+                     >For your guests, please include their meal preference in the open
+                        text box.</label
+                     >
+                     <div class="form-event__radio-container">
+                        <input class="form-event__radio" type="radio" name = "mycheck" value="chicken"/>
+                        <label class="form-event__label" for="">Chicken</label>
+                     </div>
+                     <div class="form-event__radio-container">
+                        <input class="form-event__radio" name = "mycheck" type="radio" value="fish" />
+                        <label class="form-event__label" for="">Fish</label>
+                     </div>
+                     <div class="form-event__radio-container">
+                        <input class="form-event__radio" name = "mycheck" type="radio" value="vegeterian" />
+                        <label class="form-event__label" for=""
+                        >Vegeterian</label
+                        >
+                     </div>
+                  </div>
+                  <div class="form-event__container">
+                     <h4 class="form-event__purchase">Ticket purchase</h4>
+                     <p class="form-event__tickets">Tickets</p>
+                     <div class="form-event__radio-container">
+                        <input class="form-event__radio" type="radio" name = "mycheck" value="myself" />
+                        <label class="form-event__label" for=""
+                        >$100 - Myself</label
+                        >
+                     </div>
+                     <div class="form-event__radio-container">
+                        <input class="form-event__radio" type="radio" name = "mycheck" value="chicken" />
+                        <label class="form-event__label" for=""
+                        >$200 - Myself + guest</label
+                        >
+                     </div>
+                  </div>
+               </form>
+               <input
+                 class="event__btn"
+                 type="submit"
+                 value="Enter payment information"
+               />
+            </div>
+         </section>
       </div>
    </div>
 </main>
